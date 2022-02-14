@@ -1,7 +1,5 @@
 2022Winter_Spring_learn
 
-2022Winter_Spring_learn
-
 ```java
 public String helloMvc(@RequestParam("name") String name, Model model){
         model.addAttribute("name", name);
@@ -43,4 +41,4 @@ intelij 버전 얻는 방법<br>
 설레는 테이크아웃<br><br>
 <img src="https://user-images.githubusercontent.com/70833455/153721480-f0c9c8b6-7c93-4ac0-8cf0-2f112a0daa76.png" width=350 height=350>
 
-진도 - 3번 강의까지 마침
+진도 - mvc 강의까지 마침
