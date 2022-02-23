@@ -1,5 +1,10 @@
 2022Winter_Spring_learn
 
+<h4> time leaf 문법 </h4>
+  
+1.  ```th:each``` 루프 돌면서 값을 하나씩 꺼냄
+2.  ```th:text``` getter에 접근해서 데이터를 가져온다
+
 <h4> 자바 코드로 직접 스프링 빈 등록하기</h4>
 
 
