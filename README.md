@@ -4,7 +4,7 @@
 
 + JdbcMemberRepository 의 복잡한 쿼리를 줄이고자 사용하는것
 + 질의후 결과를 매퍼로 감싸는 작업이 필요한것 같다
-+  완성본 -> [클릭](JdbcTemplateMemberRepositor) 
++  완성본 -> [클릭](https://github.com/CSN-ah22/2022Winter_Spring_learn/blob/main/src/main/java/hello/hellospring/repository/JdbcTemplateMemberRepository.java) 
 
 <h4> 스프링 통합 테스트 </h4>
 
@@ -101,4 +101,3 @@ intelij 버전 얻는 방법<br>
 설레는 첫 설정<br><br>
 <img src="https://user-images.githubusercontent.com/70833455/153721480-f0c9c8b6-7c93-4ac0-8cf0-2f112a0daa76.png" width=350 height=350>
 
-진도 - 스프링 빈과 의존단계 마침
