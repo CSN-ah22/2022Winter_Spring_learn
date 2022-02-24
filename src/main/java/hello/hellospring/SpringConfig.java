@@ -2,6 +2,7 @@ package hello.hellospring;
 
 import hello.hellospring.Service.MemberService;
 import hello.hellospring.repository.JdbcMemberRepository;
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,9 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository(){
 //        return new MemoryMemberRepository();
-        // MemoryMemberRepository 가 아닌 JdbcMemberRepository를 반환해줌으로써 의존성 성립(DI)
-        return new JdbcMemberRepository(dataSource);
+//        MemoryMemberRepository 가 아닌 JdbcMemberRepository를 반환해줌으로써 의존성 성립(DI)
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
+
     }
 }
