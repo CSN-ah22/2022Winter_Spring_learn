@@ -1,6 +1,14 @@
 2022Winter_Spring_learn
 
-<h4> JPA </h4>
+<h4> JPA2 </h4>
+
++ 스프링 데이터 JPA의 장점
+  - interface인 repository를 JpaRepository() 사용만으로 구현체를 만들어준다 -> 빈에 자동 등록
+  - CRUD 기능을 가져다 쓸 수 있다 -> (기본적인 기능들은 부르면 바로 쓸수있게 모아두었다)
+  - 커스텀 기능도 자동으로 쿼리문 만들어서 처리해준다
+  - [SpringDataJpaMemberRepository](https://github.com/CSN-ah22/2022Winter_Spring_learn/blob/main/src/main/java/hello/hellospring/repository/SpringDataJpaMemberRepository.java)
+
+<h4> JPA1 </h4>
 
 + 그레이들에 라이브러리 추가
   - ``` implementation 'org.springframework.boot:spring-boot-starter-data-jpa'```
