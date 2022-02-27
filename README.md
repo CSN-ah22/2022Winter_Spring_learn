@@ -1,5 +1,34 @@
 2022Winter_Spring_learn
 
+<h4> JPA </h4>
+
++ 그레이들에 라이브러리 추가
+  - ``` implementation 'org.springframework.boot:spring-boot-starter-data-jpa'```
++ 어플리케이션 프로퍼티스에 설정값 추가
+  - ```java
+    // JPA
+    spring.jpa.show-sql=true
+    spring.jpa.hibernate.ddl-auto=none
+    ```
+  - 영상에서 사용하는 h2의 버전이 맞지 않아서 오류가 났었다 -> 해결방법: application.properties 파일의 DB연결 url 끝에 ;MODE=LEGACY 를 추가
++ domain(getter, setter)에 매핑 어노테이션 추가
+  - DB에서의 컬럼명과 스프링에서 쓰는 변수명이 다를땐 아래 코드를 사용해 매핑해주어야 한다
+  -  ```@Column(name = "username")```
++ 레포지토리에 매니저와 쿼리 수행기능 추가 (레포지토리 새로 생성했음)
+  - [JpaMemberRepository](https://github.com/CSN-ah22/2022Winter_Spring_learn/blob/main/src/main/java/hello/hellospring/repository/JpaMemberRepository.java)
++ 서비스에 트렌젝션 추가
+  - ```java
+    @Transactional
+    public class MemberService {
+    ...
+    }
+    ```
++ spring config에서 새 레포지토리로 바꾸고 매니저를 불러온다
+  - [spring config](https://github.com/CSN-ah22/2022Winter_Spring_learn/blob/main/src/main/java/hello/hellospring/SpringConfig.java)
+<h4> IDENTITY 전략 </h4>
+
++ DB에서 ID 컬럼처럼 자동으로 값을 만들어 넣어주는 것을 IDENTITY 전략 이라고 한다
+
 <h4> JdbcTemplate </h4>
 
 + JdbcMemberRepository 의 복잡한 쿼리를 줄이고자 사용하는것
