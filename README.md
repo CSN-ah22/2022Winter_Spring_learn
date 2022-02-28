@@ -1,5 +1,15 @@
 2022Winter_Spring_learn
 
+<h4>AOP</h4>
+
++ 스프링 돌다가 중간에서 인터셉터(가로채기) 작업 하는것
+  - 한 메서드가 동작하는데 걸리는 시간을 재기 위해 
+  - 메서드마다 각각 타이머기능을 붙이는것이 아닌 
+  - 한곳에 타이머기능을 만들고 공통 적용하는것
+  - hellospring 프로젝트 자체에 적용하면 service나 controller등 모든 파일들을 자동으로 재준다
++ [TimeTraceAop](https://github.com/CSN-ah22/2022Winter_Spring_learn/blob/main/src/main/java/hello/hellospring/aop/TimeTraceAop.java)
++ 타이머 기능, 공통적용 까지 위 파일에서 다 끝내므로 다른곳(service, controller)은 건들지 않았음
+
 <h4> JPA2 </h4>
 
 + 스프링 데이터 JPA의 장점
